@@ -1,0 +1,139 @@
+body{
+    background-color:aliceblue;
+    width: 100vw;
+    height: 100vh;
+}
+.main
+{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+    border: 2px solid black;
+    grid-template-columns: 1fr 5fr 1fr;
+    /* grid-template-rows:1fr 4fr; */
+    background-color: deeppink;
+}
+.left
+{
+    display: grid;
+    border:2px solid aqua;
+    /* margin:2px; */
+    gap:0px;
+    /* place-items: center; */
+    background-color: azure;
+    grid-template-areas: 'left1'
+    'left2';
+    margin: 5px; 
+}
+.left1
+{
+    display: grid;
+    /* width: 90%;
+    height: 50%; */
+    grid-area: left1;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    /* margin: 0px; */
+    /* overflow: hidden; */
+    background-color:cadetblue ;
+}
+.left2
+{
+    display: grid;
+    /* width: 90%; */
+    grid-area: left2;
+    /* height: 50%; */
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    overflow: hidden;
+    background-color:cyan;
+}
+.middle
+{
+    display: grid;
+    border:2px solid aqua;
+    margin:4px;
+    gap:3px;
+    place-items: center;
+    /* grid-template-rows: 1fr; */
+    background-color: violet;
+    
+}
+.middlemain{
+    display:grid;
+    border: 2px solid burlywood;
+    /* width:90%;
+    height: 90%; */
+    /* place-items: center; */
+    grid-template-areas: 'middle1'
+    'middle2';
+    margin:4px;
+    background-color:rgb(209, 220, 220);
+}
+.middle1
+{
+    display: grid;
+    /* width: 90%;
+    height: 50%; */
+    grid-area: middle1;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    background-color:floralwhite;
+}
+.middle2
+{
+    display: grid;
+    /* width: 90%;
+    height: 50%; */
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    grid-area: middle2;
+    background-color: aquamarine;
+}
+
+
+.main .right
+{
+    display: grid;
+    border:2px solid aqua;
+    margin:2px;
+    /* place-items: center; */
+    grid-template-areas:'right1'
+    'right2';
+    background-color:rgb(162, 139, 164);
+}
+.right1
+{
+   
+    display: grid;
+    /* width: 90%;
+    height: 50%; */
+    grid-area: right1;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    overflow: hidden;
+    background-color:honeydew;
+}
+.right2
+{
+    
+    display: grid;
+    /* width: 90%;
+    height: 50%; */
+    grid-area:right2;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    overflow: hidden;
+    background-color:ghostwhite;
+}
